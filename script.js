@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.querySelector(".contact-form");
   const status = document.querySelector(".form-status");
-  if (form && status) {
+  if (form && status && form.dataset.service === "local") {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       status.textContent =
