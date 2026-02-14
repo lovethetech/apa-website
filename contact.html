@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APA | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">APA</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="events.html">Events</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="sponsorship.html">Sponsorship</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <a class="button small" href="contact.html">Join Us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal" style="--delay: 0.05s">
+            <p class="eyebrow">Contact APA</p>
+            <h1>Let’s build community together.</h1>
+            <p>
+              Whether you are interested in volunteering, attending events, or
+              sponsoring a program, we would love to hear from you.
+            </p>
+          </div>
+          <div class="hero-media reveal" style="--delay: 0.15s">
+            <img
+              src="https://source.unsplash.com/1200x900/?community,meeting&sig=121"
+              alt="Community meeting"
+              data-fallback="assets/placeholder-1.svg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <form class="contact-form card reveal" style="--delay: 0.08s">
+            <h2>Send a Message</h2>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="organization">Organization (optional)</label>
+            <input id="organization" name="organization" type="text" placeholder="Company or group" />
+
+            <label for="interest">Inquiry type</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select one</option>
+              <option value="sponsorship">Sponsorship inquiry</option>
+              <option value="volunteer">Volunteer opportunity</option>
+              <option value="programs">Programs or events</option>
+              <option value="partnership">Community partnership</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us how we can help"
+              required
+            ></textarea>
+
+            <button class="button" type="submit">Send Message</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+
+          <div class="reveal" style="--delay: 0.18s">
+            <h2>Sponsorship Inquiries</h2>
+            <p>
+              Interested in supporting APA programs or events? Share your goals
+              and we will tailor a sponsorship package for your organization.
+            </p>
+            <div class="list">
+              <span>Event sponsorship and cultural showcases</span>
+              <span>Youth mentorship and education programs</span>
+              <span>Community wellness and service initiatives</span>
+            </div>
+            <div class="card" style="margin-top: 20px">
+              <h3>General Contact</h3>
+              <p>Edmonton + Calgary, Alberta</p>
+              <p>info@albertapunjabiassociation.org</p>
+              <p>Volunteer • Partner • Sponsor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="brand">APA</h3>
+          <p>
+            Alberta Punjabi Association is a nonprofit dedicated to celebrating
+            Punjabi heritage, language, and community care across Alberta.
+          </p>
+        </div>
+        <div class="footer-links">
+          <strong>Quick Links</strong>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="events.html">Events</a>
+          <a href="sponsorship.html">Sponsorship</a>
+        </div>
+        <div class="footer-links">
+          <strong>Connect</strong>
+          <span>Edmonton + Calgary, Alberta</span>
+          <span>info@albertapunjabiassociation.org</span>
+          <span>Volunteer • Partner • Sponsor</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

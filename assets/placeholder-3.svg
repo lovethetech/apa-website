@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="APA cultural celebration placeholder image">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6db" />
+      <stop offset="55%" stop-color="#f6ddb3" />
+      <stop offset="100%" stop-color="#f1c981" />
+    </linearGradient>
+    <pattern id="p3" width="90" height="90" patternUnits="userSpaceOnUse">
+      <path d="M45 5 L85 45 L45 85 L5 45 Z" fill="none" stroke="#c57a1f" stroke-width="3" opacity="0.28" />
+      <path d="M45 25 L65 45 L45 65 L25 45 Z" fill="none" stroke="#c57a1f" stroke-width="2" opacity="0.35" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" rx="36" fill="url(#g3)" />
+  <rect width="1200" height="900" rx="36" fill="url(#p3)" opacity="0.6" />
+  <rect x="85" y="95" width="1030" height="710" rx="30" fill="rgba(255, 255, 255, 0.58)" stroke="#c57a1f" stroke-width="3" />
+  <g font-family="'Playfair Display', 'Georgia', serif" fill="#6a3c10" text-anchor="middle">
+    <text x="600" y="420" font-size="50" font-weight="700">Cultural Moment</text>
+    <text x="600" y="485" font-size="26" font-weight="500">Add a celebration or family photo</text>
+  </g>
+  <g fill="#c57a1f" opacity="0.35">
+    <circle cx="250" cy="260" r="40" />
+    <circle cx="960" cy="640" r="54" />
+    <rect x="860" y="210" width="190" height="16" rx="8" />
+    <rect x="180" y="670" width="210" height="16" rx="8" />
+  </g>
+</svg>
