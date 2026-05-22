@@ -1,19 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("js-enabled");
-  const fallbackDefault = "assets/placeholder-1.svg";
-  const photos = document.querySelectorAll("img");
-  photos.forEach((img) => {
-    const fallback = img.dataset.fallback || fallbackDefault;
-    const applyFallback = () => {
-      if (img.src !== fallback) {
-        img.src = fallback;
-      }
-    };
-    img.addEventListener("error", applyFallback);
-    if (img.complete && img.naturalWidth === 0) {
-      applyFallback();
-    }
-  });
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
