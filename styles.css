@@ -1027,46 +1027,47 @@ a {
 }
 
 .premium-shell {
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-  gap: 42px;
-  align-items: center;
-  padding: 44px;
+  padding: 56px;
   border-radius: 32px;
   background: rgba(255, 255, 255, 0.64);
   border: 1px solid rgba(31, 26, 21, 0.08);
   box-shadow: 0 28px 72px rgba(42, 27, 14, 0.08);
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 48px;
+  align-items: start;
+}
+
 .home-page .hero-copy h1 {
   font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 1.02;
-  max-width: 10ch;
+  line-height: 1.04;
+  max-width: 11ch;
+  margin-bottom: 24px;
 }
 
 .home-page .hero-lead {
-  max-width: 58ch;
+  max-width: 52ch;
   font-size: 1.08rem;
-}
-
-.home-visual {
-  min-height: 100%;
+  margin-bottom: 32px;
 }
 
 .showcase-panel {
-  padding: 34px;
+  padding: 32px;
   border-radius: 32px;
   background: linear-gradient(160deg, #241912 0%, #5a3b2a 100%);
   box-shadow: 0 28px 72px rgba(39, 24, 15, 0.18);
   color: #fff8ef;
+  align-self: stretch;
 }
 
 .showcase-panel h2 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 3vw, 2.9rem);
-  line-height: 1.05;
-  margin-top: 10px;
-  margin-bottom: 12px;
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  line-height: 1.08;
+  margin-bottom: 16px;
 }
 
 .showcase-panel p {
@@ -1105,7 +1106,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  margin-top: 22px;
+  margin-top: 24px;
 }
 
 .home-page .stat-chip {
@@ -1178,30 +1179,26 @@ a {
 }
 
 @media (max-width: 900px) {
-  .premium-shell,
   .stat-rail,
   .quiet-grid,
   .editorial-grid {
     grid-template-columns: 1fr;
   }
 
-  .home-visual {
-    min-height: auto;
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 }
 
 @media (max-width: 640px) {
   .premium-shell {
-    padding: 28px;
+    padding: 32px 24px;
   }
 
   .home-page .hero-copy h1 {
     max-width: none;
-    font-size: clamp(2.7rem, 12vw, 4rem);
-  }
-
-  .home-visual {
-    min-height: auto;
+    font-size: clamp(2.5rem, 12vw, 3.7rem);
   }
 
   .showcase-meta {
