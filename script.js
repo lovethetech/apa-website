@@ -31,30 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeaderState();
   window.addEventListener("scroll", updateHeaderState, { passive: true });
 
-  const stage = document.querySelector(".kinetic-stage");
-  const parallaxItems = document.querySelectorAll("[data-depth]");
-
-  if (stage && parallaxItems.length > 0 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    stage.addEventListener("pointermove", (event) => {
-      const bounds = stage.getBoundingClientRect();
-      const offsetX = (event.clientX - bounds.left) / bounds.width - 0.5;
-      const offsetY = (event.clientY - bounds.top) / bounds.height - 0.5;
-
-      parallaxItems.forEach((item) => {
-        const depth = Number(item.getAttribute("data-depth")) || 0;
-        const moveX = offsetX * depth * 120;
-        const moveY = offsetY * depth * 120;
-        item.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
-      });
-    });
-
-    stage.addEventListener("pointerleave", () => {
-      parallaxItems.forEach((item) => {
-        item.style.transform = "";
-      });
-    });
-  }
-
   const form = document.querySelector(".contact-form");
   const status = document.querySelector(".form-status");
   if (form && status && form.dataset.service === "local") {
