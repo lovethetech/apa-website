@@ -710,6 +710,19 @@ a {
   max-width: 520px;
 }
 
+.social-feed-section {
+  padding-top: 48px;
+}
+
+.social-feed-shell {
+  overflow: hidden;
+  padding: 12px;
+  border: 1px solid rgba(31, 26, 21, 0.09);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 24px 60px rgba(47, 28, 11, 0.08);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
