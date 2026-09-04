@@ -823,8 +823,27 @@ a {
   color: var(--muted);
 }
 
+.footer-links a {
+  overflow-wrap: anywhere;
+}
+
 .footer-links a:hover {
   color: var(--accent-2);
+}
+
+.contact-details {
+  display: grid;
+  gap: 10px;
+  font-style: normal;
+}
+
+.contact-details a {
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.contact-details a:hover {
+  color: var(--accent);
 }
 
 .js-enabled .reveal {
