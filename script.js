@@ -31,13 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeaderState();
   window.addEventListener("scroll", updateHeaderState, { passive: true });
 
-  const causeVideos = document.querySelectorAll(".cause-video");
-  causeVideos.forEach((video) => {
-    video.addEventListener("error", () => {
-      video.closest(".cause-video-wrap")?.classList.add("video-unavailable");
-    });
-  });
-
   const form = document.querySelector(".contact-form");
   const status = document.querySelector(".form-status");
   if (form && status && form.dataset.service === "local") {

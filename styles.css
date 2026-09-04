@@ -640,42 +640,6 @@ a {
   display: block;
 }
 
-.video-fallback {
-  display: none;
-  height: 100%;
-  padding: 34px;
-  flex-direction: column;
-  justify-content: flex-end;
-  background:
-    radial-gradient(circle at 72% 22%, rgba(242, 184, 75, 0.26), transparent 22%),
-    linear-gradient(145deg, #724123 0%, #2e211a 100%);
-  color: #fff8ef;
-}
-
-.video-fallback strong {
-  display: block;
-  margin: 10px 0 6px;
-  font-family: "Playfair Display", serif;
-  font-size: 1.7rem;
-}
-
-.video-fallback p {
-  color: rgba(255, 248, 239, 0.8);
-}
-
-.video-fallback code {
-  color: #ffd39f;
-  overflow-wrap: anywhere;
-}
-
-.video-unavailable .cause-video {
-  display: none;
-}
-
-.video-unavailable .video-fallback {
-  display: flex;
-}
-
 .cause-list {
   grid-column: 1 / -1;
   display: grid;
