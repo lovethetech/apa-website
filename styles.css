@@ -26,6 +26,7 @@ body {
     linear-gradient(180deg, #fff8f1 0%, #ffffff 45%, #faf4ed 100%);
   min-height: 100vh;
   line-height: 1.6;
+  overflow-x: clip;
 }
 
 img {
@@ -1079,6 +1080,14 @@ a {
 }
 
 @media (max-width: 640px) {
+  .container {
+    width: min(1120px, calc(100% - 32px));
+  }
+
+  .site-header {
+    overflow: hidden;
+  }
+
   .hero-shell {
     padding: 24px;
   }
@@ -1122,6 +1131,74 @@ a {
   .orbit-three {
     left: 8%;
     bottom: 32%;
+  }
+
+  .header-inner {
+    gap: 12px;
+    padding: 14px 0 12px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 2px 0 8px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .header-inner > .button.small {
+    width: 100%;
+    padding: 10px 16px;
+  }
+
+  .premium-hero {
+    padding: 32px 0 20px;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .section-title {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .cta-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cta-group .button {
+    width: 100%;
+  }
+
+  .card,
+  .future-card,
+  .sponsorship-card,
+  .timeline-item {
+    padding: 20px;
+  }
+
+  .social-feed-section {
+    padding-top: 20px;
+  }
+
+  .social-feed-shell {
+    margin: 0 -4px;
+    padding: 6px;
+    border-radius: 20px;
   }
 }
 
@@ -1335,7 +1412,8 @@ a {
 
 @media (max-width: 640px) {
   .premium-shell {
-    padding: 32px 24px;
+    padding: 28px 20px;
+    border-radius: 24px;
   }
 
   .home-page .hero-copy h1 {
@@ -1353,6 +1431,22 @@ a {
 
   .cause-list-item {
     padding: 16px 0;
+  }
+
+  .showcase-panel,
+  .editorial-panel,
+  .future-panel {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .stat-rail {
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .home-page .stat-chip {
+    padding: 16px;
   }
 }
 
